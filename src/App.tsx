@@ -221,7 +221,11 @@ function SkillBar({ name, level, icon, delay }: { name: string; level: number; i
 /* ─── Section wrapper ───────────────────────────────────────────── */
 function Section({ id, children, className = '' }: { id: string; children: React.ReactNode; className?: string }) {
   return (
+<<<<<<< HEAD
     <section id={id} className={`relative py-16 md:py-20 px-6 md:px-12 lg:px-24 ${className}`}>
+=======
+    <section id={id} className={`relative py-28 px-6 md:px-12 lg:px-24 ${className}`}>
+>>>>>>> 0cd234735a9111aa2aa1ad142a8c7bd5f3d4c7f8
       <div className="max-w-7xl mx-auto">{children}</div>
     </section>
   );
@@ -231,7 +235,11 @@ function Section({ id, children, className = '' }: { id: string; children: React
 function SectionHeader({ eyebrow, title, num }: { eyebrow: string; title: string; num?: string }) {
   const { ref, visible } = useReveal();
   return (
+<<<<<<< HEAD
     <div ref={ref} className={`mb-12 reveal ${visible ? 'visible' : ''}`}>
+=======
+    <div ref={ref} className={`mb-20 reveal ${visible ? 'visible' : ''}`}>
+>>>>>>> 0cd234735a9111aa2aa1ad142a8c7bd5f3d4c7f8
       <div className="flex items-center gap-4 mb-4">
         <p className="text-sky-400 text-xs font-semibold tracking-[0.3em] uppercase">{eyebrow}</p>
       </div>
@@ -555,8 +563,13 @@ export default function App() {
             <p className="text-sky-400 text-sm font-semibold tracking-[0.3em] uppercase cursor-blink min-h-[1.25rem]">{role}</p>
 
             {/* name — single line, full width */}
+<<<<<<< HEAD
             <h1 className="font-display font-bold text-white leading-[0.95] text-[clamp(2.8rem,12vw,7rem)] sm:text-[clamp(3.5rem,10vw,7rem)]">
               <span className="block sm:inline">Anlin </span><span className="shimmer-text block sm:inline">Jerisha</span>
+=======
+            <h1 className="font-display font-bold text-white leading-[0.95] text-[clamp(2.5rem,10vw,7rem)]">
+              Anlin <span className="shimmer-text">Jerisha</span>
+>>>>>>> 0cd234735a9111aa2aa1ad142a8c7bd5f3d4c7f8
             </h1>
 
             {/* bio */}
